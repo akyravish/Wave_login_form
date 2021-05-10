@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #e4f9f5;
+	color: #fff;
+	font-family: 'PT Sans', sans-serif;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden; /* Use to hide the scrool bar */
+}
+
+.container {
+	background-color: #11999e;
+	padding: 20px 40px;
+	border-radius: 5px;
+}
+
+h1 {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.container a {
+	text-decoration: none;
+	color: #30e3ca;
+}
+
+.btn {
+	display: inline-block;
+	width: 100%;
+	border: none;
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #30e3ca;
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.form-control {
+	margin: 20px 0 30px;
+	position: relative;
+	width: 300px;
+}
+
+.form-control input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+	display: block;
+	width: 100%;
+	color: #fff;
+	padding: 5px 0px;
+	font-size: 18px;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+	outline: none;
+}
+
+.form-control label {
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+.form-control label span {
+	display: inline-block;
+	min-width: 5px;
+	transition: 0.4s cubic-bezier(0.32, 2, 0.55, 0.27);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+	transform: translateY(-30px);
+}
